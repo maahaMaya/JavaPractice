@@ -1,0 +1,34 @@
+Types of Constructors :
+1. Default or Parameter Less Constructor
+2. Parameterized Constructor
+3. Copy Constructor
+4. Static Constructor
+
+1. Default or Parameter Less Constructor ::
+-If a constructor method doesn't take any parameters then we call
+that as default or parameter less. These constructors can be defined
+by a programmer explicitly or else will be default implicitly
+provided there is no explicit constructor under the class
+
+2. Parameterized Constructor :::
+If a constructor method is defined with out any parameters we call
+that as parameterized constructor and these constructors can be
+defined by the programmers only but never can be defined implicitly.
+
+3. Copy Constructor :::
+If we want to create multiple instances with the same values then we
+use these copy constructors, in a copy constructor the constructor
+takes the same class as a parameter to it.
+
+4 . Static Constructor :::
+If a constructor is explicitly declared by using className only we
+call that as Static Constructor. All the constructors we have defined
+till now are non-static or instance constructors.
+
+4a. If a class contains any static variables then only implicit static constructors will be present or else we need to define them explicitly
+   whereas non-static constructors will be implicitly defined in every class (except static class) provided we did not define them explicitly.
+
+4b. Static constructor are responsible in initializing static variables and these constructors are never called explicitly 
+   they are implicitly called and more over these constructor are first to execute under any class.
+
+4c. Static constructors can't be parameterized so overloading of static constructors is not possible.
