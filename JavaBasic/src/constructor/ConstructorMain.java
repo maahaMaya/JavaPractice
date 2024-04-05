@@ -19,12 +19,14 @@ public class ConstructorMain {
 		ParameterizedConstructor parameterizedConstructorOne = new ParameterizedConstructor(10);
 		ParameterizedConstructor parameterizedConstructorTwo = new ParameterizedConstructor(20);
 		
+		//Copy Constructor
 		CopyConstructor_WithoutProblem constructor_WithoutProblem = new CopyConstructor_WithoutProblem();
 		constructor_WithoutProblem.methodCall();
 		
 		CopyConstructor copyConstructor = new CopyConstructor();
 		copyConstructor.methodCall();
 		
+		//Static Constructor
 		StaticConstructor staticConstructor = new StaticConstructor();
 
 	}

@@ -32,3 +32,24 @@ till now are non-static or instance constructors.
    they are implicitly called and more over these constructor are first to execute under any class.
 
 4c. Static constructors can't be parameterized so overloading of static constructors is not possible.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+-Every class requires a constructor to be present in it if we want
+to create the instance of that class.
+-Every class contains an implicit constructor if not defined
+explicitly and with the help of that implicit constructor instance
+of class can be created.
+
+-What is the need of defining a constructor explicitly again ??
+A> Implicit constructors of a class will initialize variables of a
+class with the same value even if we create multiple instances of
+that class.
+B> If we define constructors explicitly with parameters then we get
+a change of initializing the fields or variables of the class with
+a new value every time we are going to create instance of that
+class.
+
+Note: Generally every class requires some values for execution and
+the values that are required for a class to execute are always
+sent to that class by using the constructor only.
+
