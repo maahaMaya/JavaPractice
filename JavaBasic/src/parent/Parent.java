@@ -1,6 +1,6 @@
-package Parent;
+package parent;
 
-public class parent {
+public class Parent {
 
 	public static void main(String[] args) {
 		System.out.println("Hello World...");

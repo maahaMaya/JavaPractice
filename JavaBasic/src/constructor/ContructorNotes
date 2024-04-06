@@ -52,4 +52,41 @@ class.
 Note: Generally every class requires some values for execution and
 the values that are required for a class to execute are always
 sent to that class by using the constructor only.
+------------------------------------------------------------------------------------------------------------------------------------------
+Static Constructors Vs Non-Static Constructors:
+-----------------------------------------------
+-If a constructor is explicitly declared by using a static
+modifier we call that constructor as static constructor whereas
+rest of other are non-static constructors only.
+-Constructors are responsible for initializing fields/ variables of
+a class, so static fields are initialized by static constructors
+and non-static fields are initialized by non-static constructors.
+
+
+-Static constructors are implicitly called whereas non-static constructors must be explicitly called.
+
+-Static constructors executes immediately once the execution of a class starts and more over it's the first block of code to run
+under a class(Before the Main Method) whereas non-static constructors executes only after
+creating the instance of class as well as each and every time the instance of class is created.
+
+-In the life cycle of a class static constructor executes one and
+only one time whereas non-static constructor executes for zero
+times if no instances are created and "n" times if "n" instances
+are created.
+-Non-static constructors can be parameterized but static
+constructors can't have any parameters(Static Constructor called Implicitly, So we cant pass the value in the run time) 
+because static constructors are implicitly called and more over it's the first block of code to run under the class.
+
+-Non-Static constructors can be overloaded where as static constructors can't be overloaded.
+
+>>> Every class contains an implicit constructor if not defined
+explicitly and those implicit constructors are defined based on
+the following criteria:
+
+A>Every class except a static class contains an implicit non-static
+constructor if not defined with an explicit constructor.
+B>Static constructors are implicitly defined only if that class
+contains any static fields or else that constructor will not be
+present at all.
+
 
